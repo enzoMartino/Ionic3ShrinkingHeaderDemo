@@ -3,11 +3,23 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>My First List</ion-title>
+    <ion-title>My Profile</ion-title>
   </ion-navbar>
+  <shrinking-header [scrollArea]="myContent" [headerHeight]="150">
+    <ion-row class="shrinking_header_row">
+      <ion-col class="shrinking_header_col">
+        <ion-row class="image_row">
+          <ion-icon name="contact"></ion-icon>
+        </ion-row>
+        <ion-row class="label_row">
+          <ion-label fixed class="username_label">Username</ion-label>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </shrinking-header>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen padding #myContent>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon name="{{item.icon}}" item-left></ion-icon>

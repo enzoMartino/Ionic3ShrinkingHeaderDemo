@@ -1,3 +1,20 @@
 page-list {
-
+  ion-icon {
+    font-size: 64px;
+    margin: auto;
+  }
+  .username_label {
+    margin: auto;
+    text-align: center;
+  }
+  .image_row,
+  .label_row {
+    width: 100%;
+  }
+  .shrinking_header_row{
+      height: 100%;
+  }
+  .shrinking_header_col{
+      margin: auto;
+  }
 }
